@@ -1,0 +1,21 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+}
+
+table {
+    width: 100%;
+    min-width: 300px; /* Evita que la tabla se comprima demasiado */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
