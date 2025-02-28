@@ -1,0 +1,22 @@
+/* Estilos */
+.circulo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.rojo {
+    background-color: #ff0000; 
+    transition: left 0.5s;
+}
+
+.azul {
+    background-color: #0000ff; 
+    opacity: 1; 
+    opacity: 0.5;
+}
+.azul:hover {
+    transform: translateX(-54px);
+}
