@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+.grupo-de-elementos {
+    perspective: 200px;
+  }
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.wall {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url('wall.jpg') no-repeat center top;
+    background-size: cover;
+}
+.floor {
+    position: absolute;
+    width: 120%;
+    height: 70%;
+    bottom: -10%;
+    left: -10%;
+    background: url('floor.jpg') no-repeat center bottom;
+    background-size: cover;
+    transform: skewY(5deg);
+    transform: translateZ(-10rem) rotate3d(500, -250, 100, 50deg);
+    
+}
+.shadow {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 150px;
+    height: auto;
+    filter: brightness(0)  blur(3px);;
+    opacity: 0.9;
+}
+.sheep {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    width: 150px;
+    height: auto;
+}
