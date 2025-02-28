@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de @font-face</title>
+    <style>
+        @font-face {
+    font-family: 'TituloFont';
+    src: url('fuentes/titulo-font.woff2') format('woff2'),
+         url('fuentes/titulo-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TextoFont';
+    src: url('fuentes/texto-font.woff2') format('woff2'),
+         url('fuentes/texto-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.titulo {
+    font-family: 'TituloFont', sans-serif;
+}
+
+.texto {
+    font-family: 'TextoFont', serif;
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Este es el título</h1>
+    <p class="texto">Este es un párrafo de ejemplo con otra fuente.</p>
+</body>
+</html>
